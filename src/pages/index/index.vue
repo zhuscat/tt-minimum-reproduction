@@ -4,6 +4,7 @@
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
+		<button @tap="handleTap">转跳</button>
 	</view>
 </template>
 
@@ -18,7 +19,11 @@
 
 		},
 		methods: {
-
+			handleTap() {
+				uni.navigateTo({
+					url: '/pages/p/index'
+				})
+			}
 		}
 	}
 </script>
